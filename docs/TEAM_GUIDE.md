@@ -27,8 +27,10 @@ freeze and passing build/lint/33 tests; actual phone/recording acceptance remain
 with the assignee. Give them [the 60-second scene and narration guide](../pitch/ONE_MINUTE_VIDEO_GUIDE.md).
 [Milestone 15](MILESTONE_15.md): the frozen release is uploaded to `main` in
 [Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D), with
-description and topics configured. The user creates Vercel next. Deployment and
-public-site checks remain pending; GitHub upload alone does not host the app.
+description and topics configured. The user created the Vercel site at
+[showroom-3d-brown.vercel.app](https://showroom-3d-brown.vercel.app). A deployed
+TypeScript import failure was reproduced and fixed locally; build/lint/34 tests
+passed. See Milestone 15 for the repair and remaining public-site acceptance.
 
 ## The product journey
 
@@ -647,10 +649,11 @@ user journey, Person 1 checks phones/viewer, Person 4 updates pitch and recordin
 
 ### Milestone 15: public delivery and final rehearsal
 
-**Current status:** GitHub release uploaded; Vercel pending. Follow
+**Current status:** GitHub release uploaded; Vercel runtime repair/acceptance in progress. Follow
 [the delivery checklist](MILESTONE_15.md). The confirmed GitHub repository is
 [Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D);
-the user will create the Vercel project after the upload.
+the user has created the Vercel project. Verify the repaired API deployment
+before signing off the public demo.
 
 **Outcome:** the tested app is accessible through public HTTPS URLs and the same
 journey works outside the laptop's Wi-Fi network. This follows local acceptance;

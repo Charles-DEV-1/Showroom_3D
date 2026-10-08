@@ -62,8 +62,9 @@ recorded. Give the recorder [this 60-second guide](pitch/ONE_MINUTE_VIDEO_GUIDE.
 for scenes, actions and exact narration. [Milestone 15](docs/MILESTONE_15.md) is
 now uses [Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D)
 as its GitHub delivery repository. The frozen release is uploaded to `main`;
-repository description and topics are configured. The next step is creating
-the Vercel project. Deployment and public-site acceptance are still pending.
+repository description and topics are configured. The user created the
+[Vercel deployment](https://showroom-3d-brown.vercel.app). Hosted acceptance is
+in progress; see Milestone 15 for the deployed API import repair and checks.
 
 Milestone 13: private artisan profiles and optional builder contact defaults are
 implemented. Profile and My products adapt from small phones to desktop, with
@@ -94,8 +95,8 @@ products are verified with npm run verify:demo (read-only).
 The demo script, pitch and 4-minute-25-second Full HD narrated backup MP4 are
 ready in artifacts/demo/showroom-full-demo.mp4. The real-phone
 WhatsApp hand-off and full phone recording remain manual acceptance checks.
-GitHub delivery is Milestone 15; Vercel deployment and optional GLB upload remain
-pending. GLB support is not part of the frozen release.
+GitHub/Vercel delivery is Milestone 15; full hosted acceptance remains pending.
+GLB support is not part of the frozen release.
 See [Milestone 8](docs/MILESTONE_8.md), [demo script](pitch/DEMO_SCRIPT.md) and
 [pitch](pitch/PITCH.md). Feature walkthrough: [Milestone 7](docs/MILESTONE_7.md).
 

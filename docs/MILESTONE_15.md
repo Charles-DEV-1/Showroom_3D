@@ -1,8 +1,9 @@
 # Milestone 15: GitHub, Vercel and final rehearsal
 
-**Status: frozen release uploaded to GitHub; Vercel deployment pending.**
-Features are frozen under [Milestone 14](MILESTONE_14.md). The user already has
-a GitHub repository and will create the Vercel project after the upload.
+**Status: deployed site exists; runtime import repair and hosted acceptance in progress.**
+Features are frozen under [Milestone 14](MILESTONE_14.md). The user created the
+Vercel deployment after the GitHub upload. Public origin:
+[showroom-3d-brown.vercel.app](https://showroom-3d-brown.vercel.app).
 
 **Confirmed repository:** [Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D).
 The initial inspection found an empty public repository with default branch
@@ -25,6 +26,8 @@ release scope. Secrets and ignored production-recording sources stay local.
   next, following the settings and environment-variable table below.
 
 ## 1. GitHub handoff
+
+The initial upload is complete; these steps remain the reference for later fixes.
 
 1. Confirm the exact repository URL and inspect its existing contents/branch
    before preparing the upload. Never overwrite existing remote history.
@@ -84,6 +87,38 @@ and laptop LAN addresses are not public links. Saved product IDs can stay the
 same because the database remains the same; change the origin, not the IDs.
 
 ## 4. Hosted acceptance
+
+### October 8: TypeScript imports in deployed API functions
+
+The homepage and favicon returned HTTP 200, but product/profile API requests
+failed with HTTP 500. The supplied Vercel log identified `ERR_MODULE_NOT_FOUND`:
+compiled `api/products/[id].js` still imported `server/http.ts` rather than its
+emitted JavaScript file. This was a compilation issue, not a request to change
+Supabase keys, schema or data.
+
+The fix adds `compilerOptions.rewriteRelativeImportExtensions: true` to the
+**root** `tsconfig.json`, which Vercel reads independently of Vite's project
+references. TypeScript then emits relative `.js` imports for the `.ts` sources.
+The existing source imports and local Node-based scripts continue to work.
+See [TypeScript's option documentation](https://www.typescriptlang.org/tsconfig/rewriteRelativeImportExtensions.html).
+
+`tests/deployment.test.ts` compiles all five API entry points and their imported
+dependencies using the root configuration, imports the emitted JavaScript in
+Node, and checks safe JSON responses. It reproduced the exact missing `.ts`
+module failure before the fix, and passes with the fix. Build, lint and all
+**34 tests** passed. No dependencies or database migrations were added.
+
+Push this repair, wait for the corresponding Vercel deployment, and verify the
+actual public API before marking the runtime issue resolved. The read-only demo
+check can target production:
+
+```powershell
+npm.cmd run verify:demo -- --base-url https://showroom-3d-brown.vercel.app
+```
+
+Use `/api/profile` while signed out as a boot check: it should return JSON with
+HTTP 401 rather than crash with 500. This does not certify signed-in profile
+save/read or the rest of the private artisan journey.
 
 - [ ] Refresh `/`, `/login`, `/signup`, `/auth/callback`, `/builder`,
   `/my-products`, `/profile` and a real `/product/:id` URL directly.
