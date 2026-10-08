@@ -29,8 +29,9 @@ with the assignee. Give them [the 60-second scene and narration guide](../pitch/
 [Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D), with
 description and topics configured. The user created the Vercel site at
 [showroom-3d-brown.vercel.app](https://showroom-3d-brown.vercel.app). A deployed
-TypeScript import failure was reproduced and fixed locally; build/lint/34 tests
-passed. See Milestone 15 for the repair and remaining public-site acceptance.
+TypeScript import failure was reproduced, fixed and verified after deployment;
+build/lint/34 tests, production demo checks and an isolated browser buyer check
+passed. See Milestone 15 for the evidence and remaining manual acceptance.
 
 ## The product journey
 
@@ -649,7 +650,7 @@ user journey, Person 1 checks phones/viewer, Person 4 updates pitch and recordin
 
 ### Milestone 15: public delivery and final rehearsal
 
-**Current status:** GitHub release uploaded; Vercel runtime repair/acceptance in progress. Follow
+**Current status:** GitHub release uploaded; Vercel runtime repair verified, manual acceptance pending. Follow
 [the delivery checklist](MILESTONE_15.md). The confirmed GitHub repository is
 [Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D);
 the user has created the Vercel project. Verify the repaired API deployment

@@ -1,6 +1,6 @@
 # Milestone 15: GitHub, Vercel and final rehearsal
 
-**Status: deployed site exists; runtime import repair and hosted acceptance in progress.**
+**Status: deployed API import repair verified; final manual acceptance remains pending.**
 Features are frozen under [Milestone 14](MILESTONE_14.md). The user created the
 Vercel deployment after the GitHub upload. Public origin:
 [showroom-3d-brown.vercel.app](https://showroom-3d-brown.vercel.app).
@@ -119,6 +119,22 @@ npm.cmd run verify:demo -- --base-url https://showroom-3d-brown.vercel.app
 Use `/api/profile` while signed out as a boot check: it should return JSON with
 HTTP 401 rather than crash with 500. This does not certify signed-in profile
 save/read or the rest of the private artisan journey.
+
+**Verified after deployment of repair commit
+[`30c78a9`](https://github.com/Charles-DEV-1/Showroom_3D/commit/30c78a9e39ed86060e4fbc7f33aa385717de185f):**
+Vercel reported a successful deployment. The main public product API returned
+HTTP 200 JSON, and the signed-out profile endpoint returned the expected HTTP
+401 JSON. The read-only production demo check passed for all three saved
+products, reference images, textures, finish/configuration URLs, prices and
+generated order messages.
+
+An isolated signed-out Chrome check at a 390 px phone viewport also verified
+actual model rotation, Walnut at NGN 150,000, Carrara Marble at NGN 175,000,
+dimensions, the correct deployed configuration URL in the WhatsApp message,
+and restoration of the selected finish/price after reopening that URL. The
+logo loaded, the page had no horizontal overflow, and no application errors
+were recorded. This was browser emulation; actual phone WhatsApp opening,
+signed-in hosted artisan acceptance and the delegated recording remain manual.
 
 - [ ] Refresh `/`, `/login`, `/signup`, `/auth/callback`, `/builder`,
   `/my-products`, `/profile` and a real `/product/:id` URL directly.
