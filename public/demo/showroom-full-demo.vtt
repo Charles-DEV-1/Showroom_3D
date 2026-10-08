@@ -1,0 +1,113 @@
+WEBVTT
+
+1
+00:00:00.200 --> 00:00:11.120
+ShowRoom three D helps artisans explain their furniture, and helps buyers choose a finish with a clear price. This walkthrough follows a real product from creation to its order message.
+
+2
+00:00:11.720 --> 00:00:17.960
+The artisan starts with a furniture template. No three D modeling skills are required.
+
+3
+00:00:18.560 --> 00:00:25.640
+The same builder offers chairs, shelves, beds, sofas, coffee tables, desks, and dining tables.
+
+4
+00:00:26.240 --> 00:00:35.400
+For this demo, we name the dining table and set a base price of one hundred and fifty thousand naira. The artisan enters their WhatsApp contact.
+
+5
+00:00:36.000 --> 00:00:43.880
+Changing the width to two hundred centimetres rebuilds the template immediately. The preview and its dimension label stay in sync.
+
+6
+00:00:44.480 --> 00:00:51.680
+We return to our final dimensions: one hundred and eighty centimetres wide, ninety deep, and seventy five high.
+
+7
+00:00:52.280 --> 00:00:59.800
+The parts editor gives each box, cylinder, or sphere a numeric size and centre position, plus a material slot.
+
+8
+00:01:00.400 --> 00:01:10.800
+Here we add a box, size it as a lower shelf, and place it forty centimetres above the floor. Assigning the secondary slot gives it the same finish as the legs.
+
+9
+00:01:11.400 --> 00:01:17.640
+For the final product, we remove that extra shelf and keep the simple tabletop and four legs.
+
+10
+00:01:18.240 --> 00:01:28.680
+The artisan names a finish, chooses its material slot, and sets its price modifier. Carrara Marble adds twenty five thousand naira to the primary parts.
+
+11
+00:01:29.280 --> 00:01:38.320
+A material image is uploaded to Supabase. Selecting marble changes every primary part while the secondary legs retain their own finish.
+
+12
+00:01:38.920 --> 00:01:47.520
+We add Warm Walnut as another option for the secondary slot. It adds ten thousand naira once, even though several legs use it.
+
+13
+00:01:48.120 --> 00:01:59.080
+The artisan uploads a reference photo. Our shape built preview is a stylized approximation. This stock photo is demo imagery, not measured artisan inventory.
+
+14
+00:01:59.680 --> 00:02:08.440
+Saving sends the product to our API, which validates it and stores it in Supabase. The artisan receives a shareable product link.
+
+15
+00:02:09.040 --> 00:02:16.040
+Copy the product link and share it with the customer. There is no modeling software for the buyer to install.
+
+16
+00:02:16.640 --> 00:02:24.240
+The buyer opens the saved product. Its starting Walnut configuration costs one hundred and fifty thousand naira.
+
+17
+00:02:27.240 --> 00:02:33.120
+The buyer can inspect the model from different angles and check the displayed measurements before ordering.
+
+18
+00:02:33.720 --> 00:02:41.160
+Selecting Carrara Marble changes the tabletop and updates the total immediately to one hundred and seventy five thousand naira.
+
+19
+00:02:41.760 --> 00:02:50.360
+Here is the same saved product in a phone sized browser. The responsive layout keeps the furniture preview and touch controls accessible.
+
+20
+00:02:53.360 --> 00:02:59.400
+Below the model, the buyer can see the dimensions and choose finishes for each material slot.
+
+21
+00:03:00.000 --> 00:03:09.880
+Choosing marble on this layout gives the same result: marble on the primary parts, charcoal legs, and a total of one hundred and seventy five thousand naira.
+
+22
+00:03:10.480 --> 00:03:20.320
+Choosing Warm Walnut for the legs adds ten thousand naira. The total becomes one hundred and eighty five thousand, with each selected modifier charged once.
+
+23
+00:03:20.920 --> 00:03:29.440
+We return to charcoal legs for the final order configuration: Carrara Marble, charcoal, and one hundred and seventy five thousand naira.
+
+24
+00:03:30.040 --> 00:03:40.120
+The WhatsApp button creates a prepared order enquiry. It includes the chosen finishes, price, dimensions, and a link to this exact configuration.
+
+25
+00:03:40.720 --> 00:03:52.720
+This screen previews the actual generated text. It is not the WhatsApp app. On a real phone, the button opens WhatsApp with this message ready. No message has been sent.
+
+26
+00:03:53.320 --> 00:04:01.720
+The configuration link contains the selected finish identifiers. Opening it restores the customer's choices from the saved product.
+
+27
+00:04:02.320 --> 00:04:11.240
+The reopened link restores Carrara Marble and charcoal legs. The dimensions and one hundred and seventy five thousand naira price are preserved.
+
+28
+00:04:11.840 --> 00:04:23.320
+ShowRoom three D gives both sides the same furniture configuration to discuss. The value is clearer shape, proportions, finishes, and pricing before the order conversation.

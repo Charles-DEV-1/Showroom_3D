@@ -1,0 +1,14 @@
+.profile-page { width: 100%; max-width: 800px; margin: auto; padding: clamp(28px, 4vw, 48px) clamp(16px, 3vw, 32px) 64px; }
+.profile-page .page-heading { margin-bottom: 28px; }
+.profile-card { min-width: 0; padding: clamp(20px, 4vw, 36px); border: 1px solid #dce2d4; border-radius: 20px; background: #fff; }
+.profile-card h2 { font-size: 20px; margin-bottom: 26px; }
+.profile-card input[readonly] { font-size: 16px; }
+.profile-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.profile-actions { display: flex; justify-content: flex-end; margin-top: 24px; }
+.profile-actions .button-primary { min-height: 46px; }
+.profile-success { padding: 14px; border: 1px solid #cddfd2; border-radius: 10px; background: #edf5ef; color: #234b3d; font-size: 13px; line-height: 1.7; overflow-wrap: anywhere; }
+.profile-return { display: inline-flex; align-items: center; min-height: 44px; margin-top: 20px; color: #234b3d; font-size: 13px; text-underline-offset: 4px; }
+@media (max-width: 600px) {
+  .profile-fields { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .profile-actions .button-primary { width: 100%; }
+}

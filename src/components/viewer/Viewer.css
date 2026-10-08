@@ -1,0 +1,7 @@
+.viewer { position: relative; width: 100%; height: 560px; height: clamp(360px, 65svh, 700px); overflow: hidden; background: #eeefe8; border-radius: 20px; }
+.viewer canvas { display: block; touch-action: none; }
+.viewer-hint { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: max-content; max-width: calc(100% - 24px); padding: 10px 15px; border: 1px solid #ffffff80; border-radius: 100px; background: #ffffffe6; color: #505b52; font-size: 12px; text-align: center; pointer-events: none; }
+.viewer-hint span { padding: 0 5px; }
+.viewer-message { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; width: 100%; height: 100%; min-height: 300px; padding: 32px; text-align: center; color: #505b52; }
+.viewer-message span { max-width: 360px; line-height: 1.6; font-size: 14px; }
+.viewer-status { position: absolute; top: 14px; left: 14px; right: 14px; width: fit-content; max-width: calc(100% - 28px); padding: 9px 12px; border-radius: 9px; background: #ffffffe6; color: #505b52; font-size: 12px; pointer-events: none; }

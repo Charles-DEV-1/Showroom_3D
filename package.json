@@ -1,0 +1,40 @@
+{
+  "name": "showroom-3d",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test": "node --test tests/*.test.ts",
+    "check:supabase": "node --env-file-if-exists=.env.local scripts/check-supabase.ts",
+    "verify:backend": "node --env-file-if-exists=.env.local scripts/verify-backend.ts",
+    "verify:demo": "node --env-file-if-exists=.env.local scripts/verify-demo.ts",
+    "dev:full": "vite",
+    "dev:vercel": "npx --yes vercel dev"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.1",
+    "@supabase/supabase-js": "^2.117.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

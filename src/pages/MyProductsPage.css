@@ -1,0 +1,23 @@
+.my-products-page { width: 100%; max-width: 1440px; margin: auto; padding: clamp(28px, 4vw, 48px) clamp(16px, 3vw, 32px) 64px; }
+.my-products-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
+.my-products-heading .page-heading { flex: 1 1 440px; min-width: 0; margin-bottom: 0; }
+.my-products-heading .page-heading p:last-child { max-width: 650px; margin-bottom: 0; }
+.my-products-heading .button-primary { flex: 0 0 auto; min-height: 46px; }
+.my-products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: clamp(16px, 2vw, 24px); }
+.product-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid #dce2d4; border-radius: 18px; background: #fff; }
+.product-card > img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.product-card-content { display: flex; flex-direction: column; flex: 1; min-width: 0; padding: clamp(18px, 2vw, 24px); }
+.product-card h2 { margin-bottom: 12px; line-height: 1.4; overflow-wrap: anywhere; }
+.product-card p { margin: 0 0 18px; color: #69716b; font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+.product-card strong { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; margin-bottom: 6px; color: #234b3d; font-size: clamp(20px, 2vw, 24px); overflow-wrap: anywhere; }
+.product-card strong span { font-size: 11px; font-weight: 400; }
+.product-card .button-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding-top: 18px; margin-top: auto; }
+.product-card .button-row > * { min-width: 0; min-height: 44px; padding: 10px; font-size: 13px; text-align: center; }
+.products-empty { padding: clamp(28px, 5vw, 48px) 20px; border: 1px dashed #bfcdbd; border-radius: 18px; text-align: center; }
+.products-empty p { color: #69716b; line-height: 1.6; }
+.my-products-page .notice, .my-products-page .error-message { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .my-products-heading { align-items: stretch; gap: 20px; }
+  .my-products-heading .page-heading { flex-basis: 100%; }
+  .my-products-heading > .button-primary, .products-empty .button-primary { width: 100%; }
+}

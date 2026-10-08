@@ -1,0 +1,12 @@
+.auth-page { padding: clamp(28px, 5vw, 56px) 16px 64px; }
+.auth-card { width: 100%; min-width: 0; max-width: 480px; margin: auto; padding: clamp(20px, 4vw, 36px); border: 1px solid #dce2d4; border-radius: 22px; background: #fff; }
+.auth-card h1 { font-size: clamp(28px, 5vw, 38px); line-height: 1.15; }
+.auth-card p { line-height: 1.7; overflow-wrap: anywhere; }
+.auth-intro { color: #69716b; margin: 18px 0 28px; font-size: 14px; }
+.auth-submit { width: 100%; margin-top: 8px; min-height: 46px; }
+.auth-success { padding: 14px; border: 1px solid #cddfd2; border-radius: 10px; background: #edf5ef; color: #234b3d; font-size: 13px; }
+.auth-links { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; font-size: 13px; line-height: 1.8; color: #69716b; }
+.auth-card a { color: #234b3d; text-underline-offset: 4px; }
+.auth-card a.button-primary { color: white; }
+.auth-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.auth-return { display: inline-flex; align-items: center; min-height: 44px; margin-top: 16px; font-size: 12px; }
