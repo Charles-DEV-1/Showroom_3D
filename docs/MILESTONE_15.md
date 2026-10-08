@@ -1,6 +1,6 @@
 # Milestone 15: GitHub, Vercel and final rehearsal
 
-**Status: frozen release prepared for GitHub; Vercel deployment pending.**
+**Status: frozen release uploaded to GitHub; Vercel deployment pending.**
 Features are frozen under [Milestone 14](MILESTONE_14.md). The user already has
 a GitHub repository and will create the Vercel project after the upload.
 
@@ -8,6 +8,21 @@ a GitHub repository and will create the Vercel project after the upload.
 The initial inspection found an empty public repository with default branch
 `main`. The frozen app, README, demo assets and setup guides are the initial
 release scope. Secrets and ignored production-recording sources stay local.
+
+## GitHub delivery record: October 8, 2026
+
+- Uploaded the initial release to `main` as
+  [`5e7f94a`](https://github.com/Charles-DEV-1/Showroom_3D/commit/5e7f94a15f931c44f2382af2edc4197e60b1e5cb).
+  Verified the local release commit matches `refs/heads/main` on the exact remote.
+- The release contains 103 reviewed files, including the app, migrations, public
+  demo media, README, pitch and one-minute recording guide.
+- Added and read back the repository description and stack/product topics.
+- Staged-content checks found no server key or other detected credential
+  patterns; `.env.local`, raw artifacts, dependencies and build output are excluded.
+- The app source stays frozen. This delivery record is a documentation update
+  following the initial release; the final branch head may therefore be newer.
+- No Vercel project was created or deployed by this upload. The user creates it
+  next, following the settings and environment-variable table below.
 
 ## 1. GitHub handoff
 

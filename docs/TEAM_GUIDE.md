@@ -25,10 +25,10 @@ On October 8 the user requested the feature freeze and delegated remaining
 manual regression/video recording. [Milestone 14](MILESTONE_14.md) records the
 freeze and passing build/lint/33 tests; actual phone/recording acceptance remains
 with the assignee. Give them [the 60-second scene and narration guide](../pitch/ONE_MINUTE_VIDEO_GUIDE.md).
-[Milestone 15](MILESTONE_15.md) is now in delivery preparation. The user has a
-GitHub repository, [Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D),
-and will create Vercel after upload. Vercel deployment and public-site checks are
-pending; GitHub upload alone does not make the app publicly hosted.
+[Milestone 15](MILESTONE_15.md): the frozen release is uploaded to `main` in
+[Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D), with
+description and topics configured. The user creates Vercel next. Deployment and
+public-site checks remain pending; GitHub upload alone does not host the app.
 
 ## The product journey
 
@@ -647,7 +647,7 @@ user journey, Person 1 checks phones/viewer, Person 4 updates pitch and recordin
 
 ### Milestone 15: public delivery and final rehearsal
 
-**Current status:** delivery preparation started. Follow
+**Current status:** GitHub release uploaded; Vercel pending. Follow
 [the delivery checklist](MILESTONE_15.md). The confirmed GitHub repository is
 [Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D);
 the user will create the Vercel project after the upload.

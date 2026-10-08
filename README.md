@@ -61,8 +61,9 @@ the remaining manual acceptance and recording; the new short video is not yet
 recorded. Give the recorder [this 60-second guide](pitch/ONE_MINUTE_VIDEO_GUIDE.md)
 for scenes, actions and exact narration. [Milestone 15](docs/MILESTONE_15.md) is
 now uses [Charles-DEV-1/Showroom_3D](https://github.com/Charles-DEV-1/Showroom_3D)
-as its GitHub delivery repository. The user will create the Vercel project after
-the GitHub upload. Vercel deployment and public-site acceptance are still pending.
+as its GitHub delivery repository. The frozen release is uploaded to `main`;
+repository description and topics are configured. The next step is creating
+the Vercel project. Deployment and public-site acceptance are still pending.
 
 Milestone 13: private artisan profiles and optional builder contact defaults are
 implemented. Profile and My products adapt from small phones to desktop, with
