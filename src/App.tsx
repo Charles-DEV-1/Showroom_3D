@@ -50,7 +50,7 @@ export default function App() {
   return (
     <>
       <header className="app-header">
-        <a className="brand" href="/"><span className="brand-mark" aria-hidden="true">S3</span> ShowRoom 3D</a>
+        <a className="brand" href="/"><img className="brand-mark" src="/brand/showroom-logo.png" alt="" width="42" height="42" decoding="async" /> ShowRoom 3D</a>
         <nav className="account-nav" aria-label="Artisan navigation">
           <a className="header-link" href="/builder" aria-current={builder ? 'page' : undefined}>Artisan studio</a>
           {auth.session && <><a className="header-link" href="/my-products" aria-current={myProducts ? 'page' : undefined}>My products</a><a className="header-link" href="/profile" aria-current={profile ? 'page' : undefined}>Profile</a></>}
